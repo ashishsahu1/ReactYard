@@ -19,12 +19,12 @@ export default function TextFrom(props) {
     const handleOnChange = (event)=>{
         setText(event.target.value)
     }
-    const [text, setText] = useState('Enter something');
+    const [text, setText] = useState();
     return (
         <div >
             <h1>{props.heading}</h1>
             <div className="mb-3 container">
-                <textarea className="form-control" onChange={handleOnChange} value={text} id="textArea" rows="8"></textarea>
+                <textarea className="form-control" onChange={handleOnChange} placeholder='Write something' value={text} id="textArea" rows="8"></textarea>
             </div> 
             <button className="btn btn-primary my-3 mx-3" onClick={handleUpClick}>Convert to Uppercase</button>
             <button className="btn btn-primary my-3 mx-3" onClick={handleLowClick}>Convert to Lowercase</button>
