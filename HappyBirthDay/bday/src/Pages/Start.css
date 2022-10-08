@@ -1,0 +1,12 @@
+.cntr{
+    
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.cntr-dv{
+    width: 70vw;
+    background-color: bisque;
+}
